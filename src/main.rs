@@ -68,7 +68,7 @@ fn decrypt(ciphertext: &BigInt, d: &BigInt, n: &BigInt) -> BigInt {
 }
 
 fn main() {
-    // Prime numbers (for simplicity in this example)
+    // Prime numbers 
     let p = 677656567.to_bigint().unwrap();
     let q = 1765425.to_bigint().unwrap();
     
@@ -84,7 +84,7 @@ fn main() {
     // Private key d: modular inverse of e mod phi(n)
     let d = mod_inverse(&e, &phi_n);
     
-    // Message (plaintext) to encrypt
+    // plaintext to encrypt
     let message = 99.to_bigint().unwrap(); // Example message in number form
     
     // Encrypt the message using the public key (e, n)
